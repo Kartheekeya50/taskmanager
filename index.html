@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+<section id="section1">
+    <div class="heading"><h2>Task Manager</h2></div>
+ 
+    <div class="container">
+        <div class="task-manager">
+           
+            <div class="addtask">
+                <input type="text" id="input-box" placeholder="Add Task">
+                <input type="datetime-local" id="date-time"><br>
+        </div>
+        
+        <button onclick="addTask()">+ Add</button>
+        <div class="filter">
+          
+            <select id="filter" onchange="filterTasks()">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="incomplete">Incomplete</option>
+            </select>
+        </div>
+        <ul id="list-container">
+            <!--<li class="checked">Task 1</li>
+            <li>Task 2</li>
+            <li>Task 3</li>-->
+        </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</section>
+</body>
+</html>
+
+
+           
+   
